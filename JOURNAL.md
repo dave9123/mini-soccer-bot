@@ -33,9 +33,10 @@ created_at: "2026-08-22"
 | Motor Controller   |     |           |                |                                                                                                     |
 | Li-Po Batteries    |     |           |                |                                                                                                     |
 | DC Motors          |     |           |                |                                                                                                     |
-![](./assets/firefox_aanb1o3hG3.jpg)
-![](./assets/firefox_aQALEBu19x.jpg)
-![](./assets/firefox_CdLiYMcZE3.jpg)
+
+| ![](./assets/firefox_aanb1o3hG3.jpg) | ![](./assets/firefox_aQALEBu19x.jpg) | ![](./assets/firefox_CdLiYMcZE3.jpg) |
+| ------------------------------------ | ------------------------------------ | ------------------------------------ |
+
 > Researching and finding out the best bot design
 
 ## Findings
