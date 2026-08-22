@@ -15,6 +15,7 @@ created_at: "2026-08-22"
 * Front horizontal angle >= 80deg
 * RC only, no autonomous
 * Ball entering 30mm max (with 50% part of it)
+* 2 bots/team
 
 ## Controller Parts
 
