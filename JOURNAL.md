@@ -8,6 +8,7 @@ created_at: "2026-08-22"
 # August 22: Design and Parts Research
 
 ## Competition Details
+
 * Max weight 1.5kg
 * Robot max dimensions 150x150x200mm
 * Ball diameter 32mm
@@ -50,6 +51,15 @@ Well, compared to Li-on I suppose? It seems that most drones evne uses Li-Po as 
 2.
 ![](./assets/robot-front-inspo.png)
 A rather curved near to the floor that most sumo robots take advantage of to make other bots slide up (and hopefully fall to their side or even upside down)
+
+## Some sketches
+
+![](./assets/firefox_QMqyxC8TAT.jpg)
+> Bot, kinda still unsure tho
+
+| ![](./assets/Fusion360_tmAj9SnWi3.jpg) | ![](./assets/Fusion360_Y1V11kCXXq.jpg) |
+| -------------------------------------- | -------------------------------------- |
+> Court
 
 ## References
 
