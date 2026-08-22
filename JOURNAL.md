@@ -5,9 +5,9 @@ description: "A bot that plays foosball!"
 created_at: "2026-08-22"
 ---
 
-## August 22: Design and Parts Research
+# August 22: Design and Parts Research
 
-### Competition Details
+## Competition Details
 * Max weight 1.5kg
 * Robot max dimensions 150x150x200mm
 * Ball diameter 32mm
@@ -15,7 +15,7 @@ created_at: "2026-08-22"
 * RC only, no autonomous
 * Ball entering 30mm max (with 50% part of it)
 
-### Controller Parts
+## Controller Parts
 
 | Item          | Qty | Price     | Note                                    | Link                                                                                             |
 | ------------- | :-: | --------- | --------------------------------------- | ------------------------------------------------------------------------------------------------ |
@@ -24,7 +24,7 @@ created_at: "2026-08-22"
 | Powerbank     |  1  | -         |                                         | -                                                                                                |
 | USB OTG       |  -  | -         | Connecting powerbank to gamepad + ESP32 | -                                                                                                |
 
-### Bot Parts
+## Bot Parts
 
 | Item               | Qty | Price     | Note           | Link                                                                                                |
 | ------------------ | :-: | --------- | -------------- | --------------------------------------------------------------------------------------------------- |
@@ -38,7 +38,7 @@ created_at: "2026-08-22"
 ![](./assets/firefox_CdLiYMcZE3.jpg)
 > Researching and finding out the best bot design
 
-### Findings
+## Findings
 
 1.
 > LiPo batteries are champs at delivering large amounts of current very quickly. This is often referred to as their "C-rating." A high discharge rate means the battery can dump power rapidly, which is essential for applications needing sudden bursts of energy.
@@ -50,7 +50,7 @@ Well, compared to Li-on I suppose? It seems that most drones evne uses Li-Po as 
 ![](./assets/robot-front-inspo.png)
 A rather curved near to the floor that most sumo robots take advantage of to make other bots slide up (and hopefully fall to their side or even upside down)
 
-### References
+## References
 
 * https://www.youtube.com/watch?v=lchkC-6G3m0 outer design
 * https://www.youtube.com/watch?v=stygXlLSs04 electronics
@@ -58,5 +58,4 @@ A rather curved near to the floor that most sumo robots take advantage of to mak
 * https://www.youtube.com/watch?v=YIWJbFjSOe8 https://www.cs.cmu.edu/~robosoccer/small/ wheel + movement design, although it's autonomous
 
 
-Time spent: 2 hours
-[View Lapse](https://lapse.hackclub.com/timelapse/mQ507sRRoyGv)
+Time spent: 2 hours - [View Lapse](https://lapse.hackclub.com/timelapse/mQ507sRRoyGv)
