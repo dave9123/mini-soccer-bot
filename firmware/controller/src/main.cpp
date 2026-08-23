@@ -5,7 +5,7 @@
 
 EspUsbHost usb;
 
-void onDataSent(const uint8_t, *mac_addr, esp_now_send_status_t status) {
+void onDataSent(const uint8_t *mac_addr, esp_now_send_status_t status) {
   Serial.print("\r\nLast packet status:\t"); // \r goes to new line, \t adds tab (spacing)
   Serial.println(status == ESP_NOW_SEND_SUCCESS ? "Success" : "Failed");
 }
@@ -13,6 +13,9 @@ void onDataSent(const uint8_t, *mac_addr, esp_now_send_status_t status) {
 
 void setup() {
   Serial.begin(115200);
+
+  // ESP32 as USB host to receive gamepad inputs
+  // https://github.com/tanakamasayuki/EspUsbHost/blob/main/examples/HID/EspUsbHostGamepad/EspUsbHostGamepad.ino
 
   usb.onDeviceConnected([](const EspUsbHostDeviceInfo &device) {
     Serial.print("connected: ");
@@ -32,7 +35,7 @@ void setup() {
   WiFi.mode(WIFI_STA);
 
   if (esp_now_init() != ESP_OK) {
-    Serial.println("ESPNOW init is being ahh");
+    Serial.println("ESPNOW init failed");
     return;
   }
   

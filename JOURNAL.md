@@ -70,10 +70,10 @@ A rather curved near to the floor that most sumo robots take advantage of to mak
 * https://www.youtube.com/watch?v=YIWJbFjSOe8 https://www.cs.cmu.edu/~robosoccer/small/ wheel + movement design, although it's autonomous
 
 
-Time spent: 2 hours
+Time spent: 2.1 hours
 [View Lapse](https://lapse.hackclub.com/timelapse/mQ507sRRoyGv)
 
-# August 23:
+# August 23: Code Research
 
 ## Misc Parts
 
@@ -82,11 +82,16 @@ Time spent: 2 hours
 | Battery Charger  |     |       |              |      |
 | 14-16 AWG Wire   |     |       |              |      |
 | Thermal Adhesion |     |       | Spreads heat |      |
-## Bot Parts
-| Item               | Qty | Price     | Note           | Link                                                                                                |
-| ------------------ | :-: | --------- | -------------- | --------------------------------------------------------------------------------------------------- |
-| ESP32 C3 SuperMini |  1  | Rp 36.000 |                | https://www.tokopedia.com/khurs-iot/esp32-c3-esp32-c3-super-mini-wifi-bluetooth-1735045712965829864 |
-| Buck Converter     |  1  |           | Powering ESP32 |                                                                                                     |
-| Motor Controller   |     |           |                |                                                                                                     |
-| Li-Po Batteries    |     |           |                |                                                                                                     |
-| DC Motors          |     |           |                |                                                                                                     |
+
+> Added thermal adhesion and wire to the parts list, perhaps to be placed at the motor? Got inspired from the Anker Prime 26K crackdown from https://www.youtube.com/watch?v=sBBD2iVZfxQ
+![](assets/firefox_HduVeKzJeW.jpg)
+
+![](./assets/Photos_yuf6otCNIs.jpg)
+Had a call earlier with my team (isn't included on lapse), we thought of using acrylic as casing, as they're pretty sturdy compared to wood, and they're pretty light too
+
+Also, made base code for ESP-NOW comms and gamepad parsing inspired from [Random Nerd Tutorials](https://randomnerdtutorials.com/esp-now-esp32-arduino-ide/) and [EspUsbHost](https://github.com/tanakamasayuki/EspUsbHost/blob/main/examples/HID/EspUsbHostGamepad/EspUsbHostGamepad.ino), going need to setup controller for sure 🤣
+
+![](./assets/Code_p05WlTLPLx.jpg)
+
+Time spent: 1.5 hours
+[View lapse](https://lapse.hackclub.com/timelapse/SHmiWzEWhFRh)
