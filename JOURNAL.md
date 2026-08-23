@@ -89,6 +89,8 @@ Time spent: 2.1 hours
 ![](./assets/Photos_yuf6otCNIs.jpg)
 Had a call earlier with my team (isn't included on lapse), we thought of using acrylic as casing, as they're pretty sturdy compared to wood, and they're pretty light too
 
+## Starting to code
+
 Also, made base code for ESP-NOW comms and gamepad parsing inspired from [Random Nerd Tutorials](https://randomnerdtutorials.com/esp-now-esp32-arduino-ide/) and [EspUsbHost](https://github.com/tanakamasayuki/EspUsbHost/blob/main/examples/HID/EspUsbHostGamepad/EspUsbHostGamepad.ino), going need to setup controller for sure 🤣
 
 ![](./assets/Code_p05WlTLPLx.jpg)
