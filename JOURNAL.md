@@ -83,7 +83,7 @@ Time spent: 2.1 hours
 | 14-16 AWG Wire   |     |       |              |      |
 | Thermal Adhesion |     |       | Spreads heat |      |
 
-> Added thermal adhesion and wire to the parts list, perhaps to be placed at the motor? Got inspired from the Anker Prime 26K crackdown from https://www.youtube.com/watch?v=sBBD2iVZfxQ
+> Added thermal adhesion to the parts list, perhaps to be placed at the motor? Got inspired from the Anker Prime 26K crackdown from https://www.youtube.com/watch?v=sBBD2iVZfxQ
 ![](assets/firefox_HduVeKzJeW.jpg)
 
 ![](./assets/Photos_yuf6otCNIs.jpg)
