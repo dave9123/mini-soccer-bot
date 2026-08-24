@@ -6,7 +6,7 @@ EspUsbHost usb;
 // ESP32 as USB host to receive gamepad inputs
 // https://github.com/tanakamasayuki/EspUsbHost/blob/main/examples/HID/EspUsbHostGamepad/EspUsbHostGamepad.ino
 
-void init() {
+void begin() {
   usb.onDeviceConnected([](const EspUsbHostDeviceInfo& device) {
     Serial.print("connected: ");
     espUsbHostPrint(device);

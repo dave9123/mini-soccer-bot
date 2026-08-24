@@ -111,8 +111,14 @@ Gotta need to find some drivers or through HID descriptors, but having a physica
 | ---------------------------------- | ---------------------------------- | ---------------------------------- |
 Also note that these first two are from official stores of M-Tech, which is insanely surprisingly odd, third one being the PS3 controller - might as well use a phone but being able to multitask would be important,,,
 
+## Things learned
 
+1.
+`#pragma` is Preprocessing Directive, which can be used when compiling, which in my case is to prevent duplicated imports with `#pragma once`
+> https://learncplusplus.org/learn-pragma-pragma-directive-in-c/#What_is_the_pragma_pragma_directive_in_C
 
+Although from what I know, it's more common to use `#ifndef -> #define -> #endif`, but seems way easier than having to name header files for sure
+> https://stackoverflow.com/questions/5776910/what-does-pragma-once-mean-in-c
 
 
 View lapse: [1](https://lapse.hackclub.com/timelapse/51ZzrH2pc8ha) 
