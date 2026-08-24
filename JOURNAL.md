@@ -73,7 +73,7 @@ A rather curved near to the floor that most sumo robots take advantage of to mak
 Time spent: 2.1 hours
 [View Lapse](https://lapse.hackclub.com/timelapse/mQ507sRRoyGv)
 
-# August 23: Code Research
+# August 23: Team Sync + Code Research
 
 ## Misc Parts
 
@@ -97,3 +97,22 @@ Also, made base code for ESP-NOW comms and gamepad parsing inspired from [Random
 
 Time spent: 1.5 hours
 [View lapse](https://lapse.hackclub.com/timelapse/SHmiWzEWhFRh)
+
+# August 24: 
+
+My plan:
+- left joystick Y -> front/back movement
+- right joystick X -> left/right movement
+- button (either) -> control flywheel/solenoid to kick
+
+Gotta need to find some drivers or through HID descriptors, but having a physical controller would be 999% better, but I'm rethinking of it now that they break easily (or would even come not working).. 💀
+
+| ![](assets/firefox_sPK6PdKDiE.jpg) | ![](assets/firefox_754CZwYVzf.jpg) | ![](assets/firefox_ZCjNOIu71a.jpg) |
+| ---------------------------------- | ---------------------------------- | ---------------------------------- |
+Also note that these first two are from official stores of M-Tech, which is insanely surprisingly odd, third one being the PS3 controller - might as well use a phone but being able to multitask would be important,,,
+
+
+
+
+
+View lapse: [1](https://lapse.hackclub.com/timelapse/51ZzrH2pc8ha) 

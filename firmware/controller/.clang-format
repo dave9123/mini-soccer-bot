@@ -1,0 +1,10 @@
+BasedOnStyle: Google
+
+IndentWidth: 2
+TabWidth: 2
+UseTab: Never
+
+BreakBeforeBraces: Attach
+ColumnLimit: 100
+
+PointerAlignment: Left
