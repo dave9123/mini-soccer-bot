@@ -111,6 +111,10 @@ Gotta need to find some drivers or through HID descriptors, but having a physica
 | ---------------------------------- | ---------------------------------- | ---------------------------------- |
 Also note that these first two are from official stores of M-Tech, which is insanely surprisingly odd, third one being the PS3 controller - might as well use a phone but being able to multitask would be important,,,
 
+And now I have the codebase modulized as it's good practice ;p
+
+![](assets/Code_NKDLT8v4bf.jpg)
+
 ## Things learned
 
 1.
@@ -121,4 +125,4 @@ Although from what I know, it's more common to use `#ifndef -> #define -> #endif
 > https://stackoverflow.com/questions/5776910/what-does-pragma-once-mean-in-c
 
 
-View lapse: [1](https://lapse.hackclub.com/timelapse/51ZzrH2pc8ha) 
+View lapse: [1](https://lapse.hackclub.com/timelapse/51ZzrH2pc8ha) [2](https://lapse.hackclub.com/timelapse/qRcSrwI6MJxP)
