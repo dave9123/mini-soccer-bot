@@ -4,7 +4,7 @@
 
 
 Gamepad gamepad;
-Comm comm;  
+Comm comm;
 
 void setup() {
   Serial.begin(115200);
