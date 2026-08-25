@@ -136,3 +136,9 @@ I'm currently unsure of how should I integrate the kicking controls whereas I'm 
 > Along with my uncertainties on the math, going to need to debug it for sure, as it might not work with both positive values theoretically speaking if the controller's extremely weird
 
 The easiest and most practical button to shoot would be the right side of the pads, as the left thumb is going to be focusing on movement (most likely needs to keep moving)
+
+Meanwhile the already obviously available on the HID documentation is the D-pad, being the one on the left
+
+| ![](assets/Code_mCFnN8FpBE.jpg) | ![](assets/firefox_ddrGTuFjD3.jpg) |
+| ------------------------------- | ---------------------------------- |
+
