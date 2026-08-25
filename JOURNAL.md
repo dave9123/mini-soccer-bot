@@ -141,4 +141,5 @@ Meanwhile the already obviously available on the HID documentation is the D-pad,
 
 | ![](assets/Code_mCFnN8FpBE.jpg) | ![](assets/firefox_ddrGTuFjD3.jpg) |
 | ------------------------------- | ---------------------------------- |
-
+Turns out the motor controller has a 5V power supply, so I wouldn't need a buck converter then and shorting EN to 5V it is
+![](assets/firefox_xc3XbuETMK.jpg)
