@@ -3,12 +3,14 @@
 
 #include <Arduino.h>
 #include <EspUsbHost.h>
+#include "config.h"
 
 class Gamepad {
     public:
         void begin();
     private:
         EspUsbHost usb;
+        float applyDeadzone(float);
 };
 
 #endif
