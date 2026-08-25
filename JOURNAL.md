@@ -143,3 +143,13 @@ Meanwhile the already obviously available on the HID documentation is the D-pad,
 | ------------------------------- | ---------------------------------- |
 Turns out the motor controller has a 5V power supply, so I wouldn't need a buck converter then and shorting EN to 5V it is
 ![](assets/firefox_xc3XbuETMK.jpg)
+
+or so I thought, turns out it's required for the ICs to work
+![](assets/firefox_jSwMjHhc5c.jpg)
+![](assets/e4c098ae00284dee8ad12a30ed59d7a6~tplv-aphluv4xwc-resize-jpeg_700_0.jpeg)
+
+Strapping pins:
+- GPIO2 - RTC
+- GPIO8 UART flashing (low during reset)
+- GPIO9 UART download/SPI boot
+> https://pcbartists.com/design/embedded/esp32-c3-gpio-notes-strapping-pins/

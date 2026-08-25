@@ -4,10 +4,10 @@
 #include <Arduino.h>
 
 namespace Pin {
-    constexpr uint8_t MOTOR_DRV_RPWM = ;
-    constexpr uint8_t MOTOR_DRV_LPWM = ;
-    constexpr uint8_t MOTOR_DRV_R_EN = ;
-    constexpr uint8_t MOTOR_DRV_L_EN = ;
+    constexpr uint8_t MOTOR_DRV1_RPWM = GPIO_NUM_0;
+    constexpr uint8_t MOTOR_DRV1_LPWM = GPIO_NUM_1;
+    constexpr uint8_t MOTOR_DRV2_RPWM = GPIO_NUM_2;
+    constexpr uint8_t MOTOR_DRV2_LPWM = GPIO_NUM_3;
 }
 
 #endif
