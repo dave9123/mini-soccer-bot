@@ -10,7 +10,8 @@ class Gamepad {
         void begin();
     private:
         EspUsbHost usb;
-        float applyDeadzone(float);
+        float applyDeadzone(float value);
+        float normalizeAxis(int32_t value, int32_t logicalMin, int32_t logicalMax);
 };
 
 #endif

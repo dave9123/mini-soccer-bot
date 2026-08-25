@@ -9,6 +9,13 @@ float Gamepad::applyDeadzone(float value) {
   // equation prevents output jumping from deadzone
 }
 
+float Gamepad::normalizeAxis(int32_t value, int32_t logicalMin, int32_t logicalMax) {
+  float center = (logicalMin + logicalMax) / 2.0f; // most likely (127 + (-127)) / 2.0f would be 0 / 2.0f, rather weird
+  float halfRange = (logicalMax - logicalMin) / 2.0f; // logically saying, if it's 127, -127, it'd be 254 / 2.0f eh?
+
+  return (value - center) / halfRange;
+}
+
 // ESP32 as USB host to receive gamepad inputs
 // https://github.com/tanakamasayuki/EspUsbHost/blob/main/examples/HID/EspUsbHostGamepad/EspUsbHostGamepad.ino
 
@@ -32,9 +39,7 @@ void Gamepad::begin() {
       // https://learn.microsoft.com/en-us/windows-hardware/drivers/hid/hid-usages
 
       if (field.usagePage == HID_USAGE_PAGE_DESKTOP) {
-        if (field.usage == HID_USAGE_DESKTOP_X) {
-          // left x joystick (?)
-        } else if (field.usage == HID_USAGE_DESKTOP_Y) {
+        if (field.usage == HID_USAGE_DESKTOP_Y) {
           // left y joystick (?)
         } else if (field.usage == HID_USAGE_DESKTOP_RX) {
           // right x joystick (?)

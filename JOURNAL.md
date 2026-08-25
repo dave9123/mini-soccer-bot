@@ -126,3 +126,13 @@ Although from what I know, it's more common to use `#ifndef -> #define -> #endif
 
 Time spent: 1.5 hours
 View lapse: [1](https://lapse.hackclub.com/timelapse/51ZzrH2pc8ha) [2](https://lapse.hackclub.com/timelapse/qRcSrwI6MJxP)
+
+# August 25: 
+
+I'm currently unsure of how should I integrate the kicking controls whereas I'm using both joysticks, left for forward/backward, right for left/right
+
+![](assets/Code_tIwwpoV55l.jpg)
+
+> Along with my uncertainties on the math, going to need to debug it for sure, as it might not work with both positive values theoretically speaking if the controller's extremely weird
+
+The easiest and most practical button to shoot would be the right side of the pads, as the left thumb is going to be focusing on movement (most likely needs to keep moving)
