@@ -98,7 +98,7 @@ Also, made base code for ESP-NOW comms and gamepad parsing inspired from [Random
 Time spent: 1.5 hours
 [View lapse](https://lapse.hackclub.com/timelapse/SHmiWzEWhFRh)
 
-# August 24: 
+# August 24: Improving Codebase
 
 My plan:
 - left joystick Y -> front/back movement
@@ -124,5 +124,5 @@ And now I have the codebase modulized as it's good practice ;p
 Although from what I know, it's more common to use `#ifndef -> #define -> #endif`, but seems way easier than having to name header files for sure
 > https://stackoverflow.com/questions/5776910/what-does-pragma-once-mean-in-c
 
-
+Time spent: 1.5 hours
 View lapse: [1](https://lapse.hackclub.com/timelapse/51ZzrH2pc8ha) [2](https://lapse.hackclub.com/timelapse/qRcSrwI6MJxP)
