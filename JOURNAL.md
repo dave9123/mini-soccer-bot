@@ -127,7 +127,7 @@ Although from what I know, it's more common to use `#ifndef -> #define -> #endif
 Time spent: 1.5 hours
 View lapse: [1](https://lapse.hackclub.com/timelapse/51ZzrH2pc8ha) [2](https://lapse.hackclub.com/timelapse/qRcSrwI6MJxP)
 
-# August 25: 
+# August 25: Motor Driver Mapping
 
 I'm currently unsure of how should I integrate the kicking controls whereas I'm using both joysticks, left for forward/backward, right for left/right
 
@@ -153,3 +153,7 @@ Strapping pins:
 - GPIO8 UART flashing (low during reset)
 - GPIO9 UART download/SPI boot
 > https://pcbartists.com/design/embedded/esp32-c3-gpio-notes-strapping-pins/
+
+
+Time spent: 2.6 hours
+[View lapse](https://lapse.hackclub.com/timelapse/SXwwa24t_wlL)

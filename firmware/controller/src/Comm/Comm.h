@@ -4,7 +4,7 @@
 #include <esp_now.h>
 #include <WiFi.h>
 
-struct ControlPackket {
+struct ControlPacket {
     uint8_t robotId;
 
     int8_t moveY;
