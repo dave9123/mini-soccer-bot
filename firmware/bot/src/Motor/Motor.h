@@ -3,4 +3,9 @@
 
 #include <Arduino.h>
 
+class Motor {
+    public:
+        void begin();
+};
+
 #endif
