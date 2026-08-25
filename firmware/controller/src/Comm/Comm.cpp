@@ -1,8 +1,6 @@
 #include <Comm/Comm.h>
 
 
-uint8_t broadcastAddress[] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
-
 void Comm::begin() {
   // ESP-NOW implementation from https://randomnerdtutorials.com/esp-now-esp32-arduino-ide/
   WiFi.mode(WIFI_STA);
@@ -11,4 +9,8 @@ void Comm::begin() {
     Serial.println("ESPNOW init failed");
     return;
   }
+}
+
+void Comm::sendControls() {
+  
 }
