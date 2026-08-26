@@ -14,4 +14,5 @@ void setup() {
 }
 
 void loop() {
+  gamepad.update();
 }

@@ -179,3 +179,13 @@ This seems rather stupid but it turns out that even Serial.println uses RAM by d
 > https://forum.arduino.cc/t/serial-println-random-text-uses-quite-some-ram/981890/3
 
 So, adding F() to save RAM it is :)
+
+2.
+`static_cast<type>(value)`
+In C++, you're supposed to "cast" it (very cool name I must say), whereas on Python for ex:
+```python
+a = float(3.14) # doesnt need to explicitly include float() but for explanation reasons
+b = int(a) # turns float(3.14) to int(3)
+```
+
+> https://www.geeksforgeeks.org/cpp/static_cast-in-cpp/

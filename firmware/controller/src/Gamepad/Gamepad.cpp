@@ -1,22 +1,26 @@
 #include <Gamepad/Gamepad.h>
 
-float Gamepad::applyDeadzone(float value) {
-  if (fabs(value) < Config::DEADZONE) {  // fabs makes the value positive
-    return 0.0f;
-  }
+ControlPacket packet;
 
-  return (value - copysign(Config::DEADZONE, value)) /
-         (1.0f - Config::DEADZONE);  // copysign(x, y) returns value of x and sign of y
-  // equation prevents output jumping from deadzone
-}
-
-float Gamepad::normalizeAxis(int32_t value, int32_t logicalMin, int32_t logicalMax) {
+int16_t Gamepad::axisToPWM(int32_t value, int32_t logicalMin, int32_t logicalMax) {
   float center = (logicalMin + logicalMax) /
                  2.0f;  // most likely (127 + (-127)) / 2.0f would be 0 / 2.0f, rather weird
   float halfRange = (logicalMax - logicalMin) /
                     2.0f;  // logically saying, if it's 127, -127, it'd be 254 / 2.0f eh?
 
-  return (value - center) / halfRange;
+  float normalized = constrain((value - center) / halfRange, -1.0f, 1.0f);
+
+  // apply deadzone as some controllers manufacturers are ahh cheapskate
+  if (fabs(normalized) < Config::DEADZONE) {  // fabs makes the value positive
+    return 0.0f;
+  }
+
+  float noDeadzone = (normalized - copysign(Config::DEADZONE, normalized)) /
+                     (1.0f - Config::DEADZONE);  // copysign(x, y) returns value of x and sign of y
+  // equation prevents output jumping from deadzone
+
+  return static_cast<int16_t>(
+      noDeadzone);  // int8_t only goes to 127, holy cow, rip unused allocated memory
 }
 
 // ESP32 as USB host to receive gamepad inputs
@@ -47,10 +51,11 @@ void Gamepad::begin() {
 
       if (field.usage == HID_USAGE_DESKTOP_Y) {
         // left y joystick (?) -> go forward/backward
+        packet.moveY = axisToPWM(field.value, field.logicalMin, field.logicalMax);
       } else if (field.usage == HID_USAGE_DESKTOP_RX) {
         // right x joystick (?) -> turn left/right
       } else if (field.usage == HID_USAGE_DESKTOP_DPAD_LEFT) {
-        // dpad (left side buttons) left -> shoot
+        // r2 joystick (?) -> shoot
       }
     }
   });
@@ -63,7 +68,7 @@ void Gamepad::begin() {
 void Gamepad::update() {
   static uint32_t lastSend = 0;
 
-  if (millis() - lastSend >= 20) {
+  if (millis() - lastSend >= 20) {  // send every 20 ms
     lastSend = millis();
 
     comm.sendControls();

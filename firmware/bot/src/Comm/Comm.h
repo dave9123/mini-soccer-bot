@@ -8,6 +8,8 @@
 class Comm {
     public:
         void begin();
+
+    private:
 };
 
 #endif

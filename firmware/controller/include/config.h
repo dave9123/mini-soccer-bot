@@ -11,8 +11,7 @@ namespace Config {
     constexpr uint8_t ROBOT_ID = 1;
     
     // bot
-    constexpr int8_t DRV_PWM_MIN = 0;
-    constexpr int8_t DRV_PWM_MAX = 255;
+    constexpr int8_t DRV_PWM_MAX = 255; // (1 << PWM_RESOLUTION = 8) - 1
 }
 
 #endif

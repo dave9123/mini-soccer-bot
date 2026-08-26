@@ -8,8 +8,8 @@
 
 struct __attribute__((packed)) ControlPacket {
     uint8_t robotId = Config::ROBOT_ID;
-    int8_t moveY;
-    int8_t turnX;
+    int16_t moveY;
+    int16_t turnX;
     uint8_t buttons;
 };
 
@@ -20,7 +20,6 @@ class Comm {
 
     private:
         esp_now_peer_info_t peerInfo;
-        ControlPacket packet = {}; // prevent garbage data
 };
 
 #endif
