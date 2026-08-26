@@ -157,3 +157,6 @@ Strapping pins:
 
 Time spent: 2.6 hours
 [View lapse](https://lapse.hackclub.com/timelapse/SXwwa24t_wlL)
+
+
+# August 26: 

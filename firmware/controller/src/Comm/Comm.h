@@ -11,7 +11,6 @@ struct ControlPacket {
     int8_t turnX;
 
     uint8_t buttons;
-    uint8_t sequence;
 };
 
 class Comm {
