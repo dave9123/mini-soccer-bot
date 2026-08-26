@@ -2,6 +2,8 @@
 #include <Comm/Comm.h>
 #include <Motor/Motor.h>
 
+#include "config.h"
+
 Motor motor;
 Comm comm;
 
@@ -12,6 +14,7 @@ void setup() {
 
 void loop() {
   if (Comm::newData) {
-    motor.drive(comm.latestPacket.moveY, comm.latestPacket.turnX);
+    if (comm.latestPacket.robotId == Config::ROBOT_ID)
+      motor.drive(comm.latestPacket.moveY, comm.latestPacket.turnX);
   }
 }

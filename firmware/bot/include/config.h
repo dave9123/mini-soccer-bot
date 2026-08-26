@@ -12,6 +12,8 @@ namespace Config {
     constexpr uint8_t PWM_FREQ = 20000; // motor driver limit 25 KHz
     static constexpr uint8_t PWM_RESOLUTION = 8;
     static constexpr int PWM_MAX = (1 << PWM_RESOLUTION) - 1;
+
+    constexpr uint8_t ROBOT_ID = 1;
 }
 
 #endif
