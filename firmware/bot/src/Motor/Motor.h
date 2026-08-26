@@ -9,6 +9,4 @@ class Motor {
         void begin();
 };
 
-
-
 #endif

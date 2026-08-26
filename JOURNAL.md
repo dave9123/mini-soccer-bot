@@ -160,3 +160,22 @@ Time spent: 2.6 hours
 
 
 # August 26: 
+
+
+
+## Findings
+
+1.
+This seems rather stupid but it turns out that even Serial.println uses RAM by default
+
+> In the AVR processor family, the FLASH is in a different address space from the RAM. Your sketch has easy access to RAM but very limited access to FLASH. To allow your sketch to treat strings as any other data they are all **copied from FLASH to RAM before your sketch starts**.
+> 
+> There is a trick you use to prevent this copying for string literals used for .print() or .println(). There is a macro named 'F()' that marks the string literal as data that should stay in FLASH and then casts it to special type `('__FlashStringHelper *')`. The cast causes the compiler to select the .print() and ,print() functions that know how to fetch the characters from FLASH (a.k.a. PROGMEM).
+> 
+> Just change your prints to:  
+> `Serial.println(F("This is just a text"));`  
+> to save a bunch of RAM
+
+> https://forum.arduino.cc/t/serial-println-random-text-uses-quite-some-ram/981890/3
+
+So, adding F() to save RAM it is :)

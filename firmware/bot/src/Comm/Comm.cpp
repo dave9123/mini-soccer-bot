@@ -6,7 +6,7 @@ void Comm::begin() {
   WiFi.mode(WIFI_STA);
 
   if (esp_now_init() != ESP_OK) {
-    Serial.println("ESPNOW init failed");
+    Serial.println(F("ESPNOW init failed"));
     return;
   }
 }
