@@ -1,6 +1,5 @@
 #include <Gamepad/Gamepad.h>
 
-ControlPacket packet;
 
 int16_t Gamepad::axisToPWM(int32_t value, int32_t logicalMin, int32_t logicalMax) {
   float center = (logicalMin + logicalMax) /
@@ -20,7 +19,7 @@ int16_t Gamepad::axisToPWM(int32_t value, int32_t logicalMin, int32_t logicalMax
   // equation prevents output jumping from deadzone
 
   return static_cast<int16_t>(
-      noDeadzone);  // int8_t only goes to 127, holy cow, rip unused allocated memory
+      noDeadzone * Config::DRV_PWM_MAX);  // int8_t only goes to 127, holy cow, rip unused allocated memory
 }
 
 // ESP32 as USB host to receive gamepad inputs
@@ -28,16 +27,16 @@ int16_t Gamepad::axisToPWM(int32_t value, int32_t logicalMin, int32_t logicalMax
 
 void Gamepad::begin() {
   usb.onDeviceConnected([](const EspUsbHostDeviceInfo& device) {
-    Serial.print("connected: ");
+    Serial.print(F("connected: "));
     espUsbHostPrint(device);
   });
 
   usb.onDeviceDisconnected([](const EspUsbHostDeviceInfo& device) {
-    Serial.print("disconnected: ");
+    Serial.print(F("disconnected: "));
     espUsbHostPrint(device);
   });
 
-  usb.onGamepad([](const EspUsbHostGamepadEvent& event) {
+  usb.onGamepad([this](const EspUsbHostGamepadEvent& event) {
     for (size_t i = 0; i < event.fieldCount; i++) {
       const EspUsbHostHIDFieldValue& field = event.fields[i];
 
@@ -51,7 +50,7 @@ void Gamepad::begin() {
 
       if (field.usage == HID_USAGE_DESKTOP_Y) {
         // left y joystick (?) -> go forward/backward
-        packet.moveY = axisToPWM(field.value, field.logicalMin, field.logicalMax);
+        packet.moveY = (int16_t)(Gamepad::axisToPWM(field.value, field.logicalMin, field.logicalMax));
       } else if (field.usage == HID_USAGE_DESKTOP_RX) {
         // right x joystick (?) -> turn left/right
       } else if (field.usage == HID_USAGE_DESKTOP_DPAD_LEFT) {
