@@ -159,9 +159,13 @@ Time spent: 2.6 hours
 [View lapse](https://lapse.hackclub.com/timelapse/SXwwa24t_wlL)
 
 
-# August 26: 
+# August 26: Movement System
 
+## Drive directions
 
+![](assets/Code_q5x0WHzISC.jpg)
+
+I'm not specifically sure with how would the wiring turn out, but I've named them explicitly along with at config.h so (theoretically) we'd connect them the right way <img style="max-height: 24px;" src="assets/thumbup.jpg" alt="thumbup emoji"> 
 
 ## Findings
 
@@ -189,3 +193,13 @@ b = int(a) # turns float(3.14) to int(3)
 ```
 
 > https://www.geeksforgeeks.org/cpp/static_cast-in-cpp/
+
+
+## Slightly finished code
+
+![](assets/Code_hTdVCRNOMr.jpg)
+![](assets/Code_S36g7lCrIp.jpg)
+
+
+Time spent: 2.3 hours
+[View lapse](https://lapse.hackclub.com/timelapse/wXliCoSQogpd)
