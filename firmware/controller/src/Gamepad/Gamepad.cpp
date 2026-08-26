@@ -53,8 +53,14 @@ void Gamepad::begin() {
         packet.moveY = (int16_t)(Gamepad::axisToPWM(field.value, field.logicalMin, field.logicalMax));
       } else if (field.usage == HID_USAGE_DESKTOP_RX) {
         // right x joystick (?) -> turn left/right
+        packet.turnX = (int16_t)(Gamepad::axisToPWM(field.value, field.logicalMin, field.logicalMax));
       } else if (field.usage == HID_USAGE_DESKTOP_DPAD_LEFT) {
         // r2 joystick (?) -> shoot
+        if (field.value) {
+          packet.buttons |= 0x01; // bitwise OR, set bit 1
+        } else {
+          packet.buttons &= ~0x01; // bitwise NOT -> AND, clear bit 1
+        }
       }
     }
   });
@@ -70,6 +76,6 @@ void Gamepad::update() {
   if (millis() - lastSend >= 20) {  // send every 20 ms
     lastSend = millis();
 
-    comm.sendControls();
+    comm.sendControls(packet);
   }
 }
