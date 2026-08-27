@@ -186,7 +186,7 @@ So, adding F() to save RAM it is :)
 
 2.
 `static_cast<type>(value)`
-In C++, you're supposed to "cast" it (very cool name I must say), whereas on Python for ex:
+In C++, you're supposed to "cast" it (ve ry cool name I must say), whereas on Python for ex:
 ```python
 a = float(3.14) # doesnt need to explicitly include float() but for explanation reasons
 b = int(a) # turns float(3.14) to int(3)
@@ -251,3 +251,173 @@ Btw they have 2 bots, one with that and one more with entrance design
 
 Time spent: 0.8 hours
 View lapse: [1](https://lapse.hackclub.com/timelapse/jDOeW1Oc5YNH)
+
+
+# August 27: Bot Component and Parts Research
+
+Ive worked on doing research and buying the bot components such as Microcontroller, Battery, etc. Summary of my research on bot components and the links are written down below!
+
+## Parts Purchase Summary
+
+| Item | Qty | Price | Note | Link |
+| --- | :-: | --- | --- | --- |
+| CNHL Black Series V2 1500mAh | 2 | Rp 233.000 | Battery | https://id.shp.ee/xUu6BF95 |
+| B3 Compact Charger 20W | 1 | Rp 119.900 | Charger | https://id.shp.ee/MP6Zjusb |
+| BTS7960 43A Motor Driver | 4 | Rp 52.200 | Motor Driver | https://id.shp.ee/tnBzZdRN |
+| LM2596 Buck Converter | 3 | Rp 11.000 | Buck Converter | https://id.shp.ee/gZ5Tkxmy |
+| Wemos S2 Mini ESP32-S2FN4R2 | 2 | Rp 42.500 | Controller board | https://id.shp.ee/T4hjgRxW |
+| ESP32-C3 SuperMini | 2 | Rp 39.900 | Bot MCU | https://id.shp.ee/GHEaAjaf |
+| AWG14 Silicone Wire | 2m | Rp 15.000 / m | Power wiring | https://id.shp.ee/Lqaz3kea |
+| AWG22 Silicone Wire | 5m | Rp 4.800 / m | Signal wiring | https://id.shp.ee/Re2zaZ1S |
+| XT60 Connector | 5 pairs | Rp 11.640 | Battery plug | https://id.shp.ee/uZhk5tnB |
+| PS4 Controller | 2 | Rp 210.000 | Remote controller | https://tk.tokopedia.com/ZSVbwTDTH/ |
+
+## 1. Battery (Li-Po)
+
+Why am i choosing lipo was because it has a high discharge rate (C-rating) to supply sudden bursts of power when the motors accelerate or kick the ball. Below are the battery that ive planned to use for the mini soccer-bot and specs are also written down below.
+
+![Battery](./assets/cnhl-battery.jpg)
+
+**Name :** CNHL Black Series V2 1500mAh
+**Specs :**
+  - **Voltage :** 11.1V / 3-Cell / 3S1P
+  - **Capacity :** 1500mAh
+  - **Discharge Rate (C-rating) :** 130C Continual / 260C Burst
+  - **Approx Weight (±5g) :** 125g
+  - **Output Connector :** XT60
+  - **Balance Connector : ** JST / XH
+
+
+## 2. Battery Balance Charger
+
+This thing is important because we need to charge our battery :D. Specs and others are written below!
+
+![Battery Balance Charger](./assets/b3-charger.jpg)
+**Name :** B3 Compact Charger 2S 3S Li-Po Balance Battery 20W
+**Specs :**
+  - **Charging Power :** 20W 
+  - **Charge Current :** 1.6A
+  - **Balance Charging Current :** 1600mA
+  - **Power Input Voltage :** AC 110 to 240V 50/60Hz
+  - **Battery Type :** Li-Po 2S /3S
+  - **Size :** Approx. 91 x 58 x 35 mm
+
+
+## 3. Motor Driver
+
+ESP32 are obviously cant handle high current directly. The motor driver takes sighnals from the ESP32 and funnels the high-current power from the battery to the motors. For the motor driver.
+
+![Motor Driver](./assets/bts7960-driver.jpg)
+**Name :** BTS7960 43A High Current Motor Driver H-Bridge
+**Specs :**
+  - **Input / Drive Voltage :** 5.5V to 27V DC
+  - **Max Current :** Up to 43A (peak/continuous with proper cooling)
+  - **Logic Voltage :** 3.3V - 5V
+  - **PWM Frequency :** Up to 25kHz
+  - **Dimensions :** 50mm x 50mm z 43mm
+  - **Weight : ** ~66g
+
+
+## 4. Buck Converter
+
+The battery is usually 11.1V+, but the ESP32 needs 3.3V or 5V. A buck converter steps down the voltage efficiently.
+
+![Buck Conv](./assets/lm2596-buck.jpg)
+
+**Name :** DC-DC Step Down Converter LM2596
+**Specs :**
+  - **Input Voltage Range :** 4.5V to 40V
+  - **Output Voltage Options :** 1.23V to 37V
+  - **Max Output Current :** 3.0 A
+  - **Switching Frequency :** 150 kHz (has a fixed internal oscillator)
+
+
+## 5. Microcontroller
+
+Microcontroller is the brain of the robot, we use 2 different types of MCU's, the first one is ESP32-C3 Super Mini are for the robot, and the second is Wemos S2 Mini ESP32-S2FN4R2. The second one are used for the stick controller because it needs an USB Host, And thats the cheapest board with USB Host support i could find (i guess). Both specs are listed below. 
+
+**Name :** Wemos S2 Mini ESP32-S2FN4R2
+
+![Wemos S2 Mini](./assets/wemos-s2-mini.jpg)
+
+**Specs :**
+  - **Chipset :** ESP32-S2FN4R2 (Single Core 32 Bit, 240MHz)
+  - **Connectivity :** WiFi 2.4GHz (IEE 802.11 b/g/n)
+  - **Interface :** USB Type-C, UART, SPI, I2C, I2S, ADC, DAC, PWM (with 27 pins of GPIO)
+
+**Name :** ESP32-C3 Super Mini Wifi Wireless Bluetooth
+
+![ESP32-C3 SuperMini](./assets/esp32-c3-supermini.png)
+
+**Specs :**
+  - **Chipset :** ESP32-C3 (Single Core 32 Bit RISC-V 160MHz 400KB SRAM)
+  - **Connectivity :** WiFi 2.4GHz (IEE 802.11 b/g/n), Bluetooth Low Energy 5.0
+  - **Interface :** USB Type-C, UART, SPI, I2C, I2S, ADC, PWM (with 11 pins of GPIO)
+
+
+## 6. AWG14 Wire
+
+This wire is for connecting the battery to the motor driver or other power stuff because it can handle high current without melting.
+
+**Name :** AWG14 Silicone Wire
+
+![AWG14 Wire](./assets/awg14-wire.jpg)
+
+**Specs :**
+  - **Material :** Silicone Rubber + Tinned Copper
+  - **Temperature Rating :** -60C to 200C
+  - **Conductor Gauge :** 14 AWG
+  - **Usage :** Battery and power distribution
+
+
+## 7. AWG22 Wire
+
+This one is thinner, we use it for signal wires like connecting ESP32 to the motor driver and other low power things.
+
+**Name :** AWG22 Silicone Wire
+
+![AWG22 Wire](./assets/awg22-wire.jpg)
+
+**Specs :**
+  - **Material :** Silicone Rubber + Tinned Copper
+  - **Temperature Rating :** -60C to 200C
+  - **Conductor Gauge :** 22 AWG
+  - **Usage :** Logic signals and low power wiring
+
+
+## 8. XT60 Connector
+
+We need this to connect our battery to the bot's power distribution. It's the standard plug for Li-Po batteries.
+
+**Name :** XT60 Male Female Connector
+
+![XT60 Connector](./assets/xt60-connector.jpg)
+
+**Specs :**
+  - **Material :** Gold plated copper + Nylon
+  - **Current Rating :** 60A
+  - **Usage :** Battery connection
+
+
+## 9. PS4 Controller
+
+We will use this controller to remote control our bot.
+
+**Name :** PS4 DualShock 4 Wireless Controller
+
+![PS4 Controller](./assets/ps4-controller.jpg)
+
+**Specs :**
+  - **Connectivity :** Bluetooth / Micro USB
+  - **Power :** Built-in rechargeable battery
+  - **Usage :** Stick controller for the robot
+
+
+
+
+
+
+
+
+
+
