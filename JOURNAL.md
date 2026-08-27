@@ -205,7 +205,7 @@ Time spent: 2.3 hours
 [View lapse](https://lapse.hackclub.com/timelapse/wXliCoSQogpd)
 
 
-# August 27: 
+# August 27: Bot design research
 
 ## Winning bots
 
@@ -239,5 +239,15 @@ Btw they have 2 bots, one with that and one more with entrance design
 
 ### 3 - 0 (front) / 6 (back)
 
+![](assets/firefox_KeXmmEXgGv.jpg)
+
 #### Why did opponent lose
 1. Able to move fast but has a low torque & grip, therefore got pushed
+
+> https://www.youtube.com/live/0cpbZFqJKlk?si=FYvaNfgzDezZFg4T&t=7043
+
+
+
+
+Time spent: 0.8 hours
+View lapse: [1](https://lapse.hackclub.com/timelapse/jDOeW1Oc5YNH)
