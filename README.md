@@ -4,6 +4,10 @@ An RC mini soccer bot
 
 ## To do
 
+### Important
+- Direct connection bot <-> controller
+
+### Misc
 * Implement USB HID as host ESP32-S2
 	* Debug all controller inputs
 * Implement ESP-NOW to bot

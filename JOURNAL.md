@@ -203,3 +203,41 @@ b = int(a) # turns float(3.14) to int(3)
 
 Time spent: 2.3 hours
 [View lapse](https://lapse.hackclub.com/timelapse/wXliCoSQogpd)
+
+
+# August 27: 
+
+## Winning bots
+
+### 1 - 0 (back) / 7 (front)
+![](assets/firefox_2AIpt8Ydrv.jpg)
+
+Crashing hard, going insanely fast (more like sumo atp)
+> https://www.youtube.com/live/0cpbZFqJKlk?si=qlYBrbrmiiOs4pXE&t=11080
+
+#### Why did opponent lose
+1. Lose grip, gets pushed easily
+2. Lack of momentum, winning team was colliding at high speeds
+
+### 2 - 7 (back) / 0 (front)
+
+![](assets/firefox_ds5PGITzdE.jpg)
+![](assets/firefox_5RUwJs43xe.jpg)
+
+The sides has a rather increase with the middle being a hole (again, makes other bot that crashes to flip while gatekeeping the ball)
+![](assets/firefox_uXGzvSv4Hj.jpg)
+
+Btw they have 2 bots, one with that and one more with entrance design
+![](assets/firefox_HOg3latY3z.jpg)
+
+#### Why did opponent lose
+1. They kept on flipping backwards
+2. It moves so insanely slow
+
+> https://www.youtube.com/live/0cpbZFqJKlk?si=Uul3J3djeLf3dk2C&t=11412
+
+
+### 3 - 0 (front) / 6 (back)
+
+#### Why did opponent lose
+1. Able to move fast but has a low torque & grip, therefore got pushed
