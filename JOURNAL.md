@@ -257,7 +257,7 @@ View lapse: [1](https://lapse.hackclub.com/timelapse/jDOeW1Oc5YNH)
 
 Ive worked on doing research and buying the bot components such as Microcontroller, Battery, etc. Summary of my research on bot components and the links are written down below!
 
-### Parts Purchase Summary
+**Parts Purchase Summary**
 
 | Item | Qty | Price | Note | Link |
 | --- | :-: | --- | --- | --- |
@@ -272,7 +272,7 @@ Ive worked on doing research and buying the bot components such as Microcontroll
 | XT60 Connector | 5 pairs | Rp 11.640 | Battery plug | https://id.shp.ee/uZhk5tnB |
 | PS4 Controller | 2 | Rp 210.000 | Remote controller | https://tk.tokopedia.com/ZSVbwTDTH/ |
 
-### 1. Battery (Li-Po)
+**1. Battery (Li-Po)**
 
 Why am i choosing lipo was because it has a high discharge rate (C-rating) to supply sudden bursts of power when the motors accelerate or kick the ball. Below are the battery that ive planned to use for the mini soccer-bot and specs are also written down below.
 
@@ -288,7 +288,7 @@ Why am i choosing lipo was because it has a high discharge rate (C-rating) to su
   - **Balance Connector : ** JST / XH
 
 
-### 2. Battery Balance Charger
+**2. Battery Balance Charger**
 
 This thing is important because we need to charge our battery :D. Specs and others are written below!
 
@@ -303,7 +303,7 @@ This thing is important because we need to charge our battery :D. Specs and othe
   - **Size :** Approx. 91 x 58 x 35 mm
 
 
-### 3. Motor Driver
+**3. Motor Driver**
 
 ESP32 are obviously cant handle high current directly. The motor driver takes sighnals from the ESP32 and funnels the high-current power from the battery to the motors. For the motor driver.
 
@@ -318,7 +318,7 @@ ESP32 are obviously cant handle high current directly. The motor driver takes si
   - **Weight : ** ~66g
 
 
-### 4. Buck Converter
+**4. Buck Converter**
 
 The battery is usually 11.1V+, but the ESP32 needs 3.3V or 5V. A buck converter steps down the voltage efficiently.
 
@@ -332,7 +332,7 @@ The battery is usually 11.1V+, but the ESP32 needs 3.3V or 5V. A buck converter 
   - **Switching Frequency :** 150 kHz (has a fixed internal oscillator)
 
 
-### 5. Microcontroller
+**5. Microcontroller**
 
 Microcontroller is the brain of the robot, we use 2 different types of MCU's, the first one is ESP32-C3 Super Mini are for the robot, and the second is Wemos S2 Mini ESP32-S2FN4R2. The second one are used for the stick controller because it needs an USB Host, And thats the cheapest board with USB Host support i could find (i guess). Both specs are listed below. 
 
@@ -355,7 +355,7 @@ Microcontroller is the brain of the robot, we use 2 different types of MCU's, th
   - **Interface :** USB Type-C, UART, SPI, I2C, I2S, ADC, PWM (with 11 pins of GPIO)
 
 
-### 6. AWG14 Wire
+**6. AWG14 Wire**
 
 This wire is for connecting the battery to the motor driver or other power stuff because it can handle high current without melting.
 
@@ -370,7 +370,7 @@ This wire is for connecting the battery to the motor driver or other power stuff
   - **Usage :** Battery and power distribution
 
 
-### 7. AWG22 Wire
+**7. AWG22 Wire**
 
 This one is thinner, we use it for signal wires like connecting ESP32 to the motor driver and other low power things.
 
@@ -385,7 +385,7 @@ This one is thinner, we use it for signal wires like connecting ESP32 to the mot
   - **Usage :** Logic signals and low power wiring
 
 
-### 8. XT60 Connector
+**8. XT60 Connector**
 
 We need this to connect our battery to the bot's power distribution. It's the standard plug for Li-Po batteries.
 
@@ -399,7 +399,7 @@ We need this to connect our battery to the bot's power distribution. It's the st
   - **Usage :** Battery connection
 
 
-### 9. PS4 Controller
+**9. PS4 Controller**
 
 We will use this controller to remote control our bot.
 
@@ -413,7 +413,7 @@ We will use this controller to remote control our bot.
   - **Usage :** Stick controller for the robot
 
 
-### What I learned
+**What I learned**
 
 For the successes, I managed to find all the key components we need for our bot and kept them under budget. I also found the cheapest ESP32-S2 board with USB Host support so we can use a gamepad.
 
