@@ -413,6 +413,15 @@ We will use this controller to remote control our bot.
   - **Usage :** Stick controller for the robot
 
 
+## What I learned
+
+For the successes, I managed to find all the key components we need for our bot and kept them under budget. I also found the cheapest ESP32-S2 board with USB Host support so we can use a gamepad.
+
+For the failures, I almost forgot to buy the wires (AWG14 and AWG22) and XT60 battery plugs! I realized this right before ordering everything, otherwise we wouldn't be able to power the bot at all. I also realized we definitely need the buck converter because the 11.1V from the Li-Po is way too high for the ESP32, and using the motor driver's built-in 5V regulator is risky because it might cause the ESP32 to brown out when the motors draw peak current.
+
+Total time spent: 2.0 hours
+
+
 
 
 
