@@ -1,8 +1,8 @@
 ---
-title: "Mini Soccer Bot"
-author: "dave9123"
-description: "A bot that plays foosball!"
-created_at: "2026-08-22"
+title: Mini Soccer Bot
+author: dave9123
+description: A bot that plays foosball!
+created_at: 2026-08-22
 ---
 
 # August 22: Design and Parts Research
@@ -205,7 +205,7 @@ Time spent: 2.3 hours
 [View lapse](https://lapse.hackclub.com/timelapse/wXliCoSQogpd)
 
 
-# August 27: Bot design research
+# August 27: Bot Design Research
 
 ## Winning bots
 
@@ -247,10 +247,8 @@ Btw they have 2 bots, one with that and one more with entrance design
 > https://www.youtube.com/live/0cpbZFqJKlk?si=FYvaNfgzDezZFg4T&t=7043
 
 
-
-
-Time spent: 0.8 hours
-View lapse: [1](https://lapse.hackclub.com/timelapse/jDOeW1Oc5YNH)
+Time spent: 1.35 hours
+View lapse: [1](https://lapse.hackclub.com/timelapse/jDOeW1Oc5YNH) [2](https://lapse.hackclub.com/timelapse/47ffQt7y8Fo-)
 
 
 # August 27: Bot Component and Parts Research
@@ -419,14 +417,137 @@ For the successes, I managed to find all the key components we need for our bot 
 
 For the failures, I almost forgot to buy the wires (AWG14 and AWG22) and XT60 battery plugs! I realized this right before ordering everything, otherwise we wouldn't be able to power the bot at all. I also realized we definitely need the buck converter because the 11.1V from the Li-Po is way too high for the ESP32, and using the motor driver's built-in 5V regulator is risky because it might cause the ESP32 to brown out when the motors draw peak current.
 
-Time spent: 2.0 hours
+Time spent: 2 hours
+
+# August 27: 
 
 
 
+> The power consumption is currently **0.66 watts**, and we need to go below 0.5 watts (EU and CE requirements)
+> https://github.com/espressif/esp-idf/issues/11714 (ESP-NOW)
+
+That seems like a high amount, wow (although my laptop eats up to 20W on idle for some reason hahah)
+
+![](assets/GHelper_QxTeNMm4rk.jpg)
 
 
 
+# September 4: Drive Train Research
+## Got some motors!
+
+Recently gotten 4 JGA25 motors ordered (I'm really hoping deep inside that they aren't that bad, kinda really need good torque and speed for it)
+
+![image.png](https://cdn.hackclub.com/01a06c64-194b-74da-9ed5-18e958a9efad/image.png)
 
 
 
+I'd love to get JGB37 motors as they have way more torque for the same speed.. but their sizes are right beside the constraints (after some shenanigans that is)
+
+
+![image.png](https://cdn.hackclub.com/01a06c67-3986-72f6-bffa-803609fbe348/image.png)
+
+The upper side has a rather bad center of gravity, that is as the heavy guys, which are the motors, won't be on the ground, which (might) work with the lower (second) one, although we'll see
+
+and then the only cheap (lower than 200k) I could find with >200 RPM is.. this guy being 1 left holy cow
+
+![image.png](https://cdn.hackclub.com/01a06c69-3f69-7a45-a6ba-9593873b8de3/image.png)
+
+ ## ## Wheel Options
+
+1. 82 mm traditional wheel https://www.tokopedia.com/rajacell/roda-robot-smart-car-82mm-blue-rc-whell-velg-ban-karet-radial
+
+![image.png](https://cdn.hackclub.com/01a06ed6-228b-7d5e-806c-7369a1b8e1cd/image.png)
+
+> The wheel's rim is out of ABS, unsure of the rubber
+
+2. 60mm mecanum wheel https://www.tokopedia.com/hwthinker/4pcs-set-60mm-metal-mecanum-wheel-omni-directional-shaft-hub-coupling
+
+![image.png](https://cdn.hackclub.com/01a06c6d-1f03-7acf-96ce-addd9ad379dd/image.png)
+
+
+3. 58mm omni wheel 14135 https://www.tokopedia.com/jogjarobotika/omni-wheel-14135-58mm-aluminium
+
+![image.png](https://cdn.hackclub.com/01a06c72-29ba-7add-b934-47deda377967/image.png)
+
+> Body: aluminum alloy
+> Roller: Thermo Plastic Rubber (TPR)
+
+5. 60mm omniwheel https://www.tokopedia.com/mri-electronics/double-omni-wheel-60mm-hub-motor-control-remote-1731063458870756574
+
+![image.png](https://cdn.hackclub.com/01a06f0f-c009-796d-be23-04c55dccb096/image.png)
+
+6. 80/96mm mecanum wheel https://www.tokopedia.com/mri-electronics/mecanum-wheel-roda-robot-omni-directional-omni-wheel-48mm-60mm-80mm-96mm-smart-car-mobil-control-1731063458984527070
+
+![image.png](https://cdn.hackclub.com/01a06ede-35fa-7bb1-9f99-c35351953173/image.png)
+
+> Body: ABS
+> Wheel: Rubber
+
+
+5. 58mm omniwheel https://www.tokopedia.com/hwthinker/roda-robot-omniwheel-58-mm-omnidirectional-wheel-roda-bebas-omni-wheel-58mm-hub-mounting-coupling-for-mobile-robot
+
+![image.png](https://cdn.hackclub.com/01a06ee0-3d24-76f1-936d-44f3fb2931b6/image.png)
+
+> Omni Wheel Diameter: 58mm
+> Wheel Diameter: 58 mm
+> Cylinder Diameter: 13 mm
+> Body Material: Nylon
+> Roller Material: Thermo Plastic Rubber (TPR)
+> Weight Capacity: 3 kg
+> Weight: 60 g
+> Inner Hub Coupling Diameter: 4mm
+
+## Similar version 
+
+![image.png](https://cdn.hackclub.com/01a06f11-22bf-748d-a7a2-f682bfc59605/image.png)
+
+https://www.tokopedia.com/hwthinker/roda-robot-omniwheel-58-mm-14135-omnidirectional-wheel-roda-bebas-omni-wheel-58mm-hub-mounting-coupling-motor-for-mobile-robot-1730846786727741397
+
+6. 45mm diameter, 20mm thickness traditional wheel https://www.tokopedia.com/rajacell/miniq-smart-car-wheel-tyre-roda-karet-ban-robot-for-motor-gearbox-n20
+
+![image.png](https://cdn.hackclub.com/01a06ed6-51f5-7d00-812e-43a8834c237a/image.png)
+
+7. Silicone wheel rubber & wheel rim https://www.tokopedia.com/aitumegabot/roda-velg-motor-dc-aitumega-robot-line-follower-custom-3mm?extParam=src%3Dshop%26whid%3D3631000&aff_unique_id&channel=others&chain_key
+
+![firefox_pjoI386Z63.jpg](https://cdn.hackclub.com/01a06edb-00e9-7645-9cbe-85a6ba56bee2/firefox_pjoI386Z63.jpg)
+
+![firefox_z31Ypvjg6R.jpg](https://cdn.hackclub.com/01a06edb-0706-7992-9f93-e3741329ac32/firefox_z31Ypvjg6R.jpg)
+
+8. 60mm diameter, 30mm width mecanum https://www.tokopedia.com/ichibot/60mm-60-mm-mecanum-wheel-omnidirectional-roda-tt-hub-coupling-robot
+
+![image.png](https://cdn.hackclub.com/01a06f0e-4ece-718a-bd67-620162e1218b/image.png)
+
+
+# September 9
+
+2.5 mm minimum
+
+## Some more binge watching
+
+### Flipping
+
+Update from [[#1 - 0 (back) / 7 (front)|previous game journal]]
+
+<video controls>
+	<source src="https://cdn.hackclub.com/01a07bea-bf37-71c1-b23b-1c6550f853d4/firefox_zpfeywoob6.mp4" type="video/mp4">
+</video>
+
+> Bot directly flips after collision, might be issues with center of gravity
+
+With the winning bot's grip being rather odd
+
+<video controls><source src="https://cdn.hackclub.com/01a07bf2-5346-7a4d-9aa8-da2aa2c68f69/firefox_oy0oxgf7pe.mp4" type="video/mp4"></video>
+
+![firefox_IhvqRwokVA.jpg](https://cdn.hackclub.com/01a07bf4-8682-70e1-b468-f7d41b1a6c9e/firefox_IhvqRwokVA.jpg)
+
+> Wheel is looking really large in diameter
+
+
+### Energy bursts
+
+<video controls><source src="https://cdn.hackclub.com/01a07c7f-a684-7e62-a424-f22d837f1df2/firefox_sdhbpddpv6.mp4"></video>
+
+> Too high of uncontrollable acceleration can cause the bot to flip, whereas perfectly controlled can be beneficial
+
+Firmware notes: perhaps additional controls for high power bursts through capacitors
 
