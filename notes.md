@@ -4,21 +4,33 @@ closing eric unj 2026 - https://www.youtube.com/live/OFYB2cfvnSU?si=QakR6SRcZZy-
 
 ### wheel
 
-| Design Option         | Pros                                               | Cons                                                                            | Decision |
-| --------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------- | -------- |
-| 4WD Silicone          | - Great grip traction (..until dirt)<br>           | - Silicone sticks dirt easily, slipping afterwards<br>- Uses more power to move |          |
-| 4WD Mecanum           | - Able to move more freely sideways                | - Low traction                                                                  |          |
-| 2WD Silicone + Caster | - Space efficient<br>- Rotates easily during turns | - Silicone sticks dirt easily, slipping afterwards                              |          |
-| 6WD Silicone          |                                                    |                                                                                 |          |
+| Design Option         | Pros                                                      | Cons                                                                                           | Decision       |
+| --------------------- | --------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | -------------- |
+| 4WD Silicone          | - Great grip traction (..until dirt)<br>                  | - Silicone sticks dirt easily, slipping afterwards<br>- Uses more power to move                | Good           |
+| 4WD Mecanum           | - Able to move more freely sideways                       | - Low traction                                                                                 | No             |
+| 2WD Silicone + Caster | - Space efficient<br>- Rotates easily during turns        | - Silicone sticks dirt easily, slipping afterwards                                             | Preferably not |
+| 6WD Silicone          | - Best traction (referenced from Malaysia's winning team) | - Needs high power to move.. or belt drive (and insanely expensive)<br>- No space for solenoid | Better         |
+
+| Material Option | Pros        | Cons                                                    | Decision  |
+| --------------- | ----------- | ------------------------------------------------------- | --------- |
+| Rubber          | -           | - Requires molding (high temperature) for custom sizing | Maybe not |
+| Silicone        | - Best grip | - Easily tear & pick up dirt                            | Better    |
+| TPU             | -           | -                                                       | Better    |
 
 ### kicker
 
-| Design Option        | Pros | Cons | Decision |
-| -------------------- | ---- | ---- | -------- |
-| No kicker            |      |      |          |
-| Solenoid kicker      |      |      |          |
-| Retractable flywheel |      |      |          |
+| Design Option        | Pros                                                        | Cons                                                                                                                                               | Decision   |
+| -------------------- | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| No kicker            | - More space designated for wheel optimization              | - Can't shoot ball without moving                                                                                                                  | Preferably |
+| Solenoid kicker      | - Able to launch ball without moving bot                    | - Uses huge space                                                                                                                                  | Maybe      |
+| Retractable flywheel | - Can shoot balls faster<br>- Easily control shooting speed | - Lowers the possibility of collision dampening (as it's in front, unlike solenoid)<br>- Needs a retractable system (might be teeny weeny complex) | Maybe not  |
 
+## drivetrain
+
+| Design Option                      | Pros                               | Cons                                                                        | Decision  |
+| ---------------------------------- | ---------------------------------- | --------------------------------------------------------------------------- | --------- |
+| Direct drive                       | - Less friction                    | - Eats up space                                                             | Maybe     |
+| H-bridge (gears, motor from above) | - Space can be allocated to others | - Prone to damage, especially during collision<br>- Worse center of gravity | Maybe not |
 
 ## reference
 
