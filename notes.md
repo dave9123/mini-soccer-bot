@@ -27,10 +27,10 @@ closing eric unj 2026 - https://www.youtube.com/live/OFYB2cfvnSU?si=QakR6SRcZZy-
 
 ## drivetrain
 
-| Design Option                      | Pros                               | Cons                                                                        | Decision  |
-| ---------------------------------- | ---------------------------------- | --------------------------------------------------------------------------- | --------- |
-| Direct drive                       | - Less friction                    | - Eats up space                                                             | Maybe     |
-| H-bridge (gears, motor from above) | - Space can be allocated to others | - Prone to damage, especially during collision<br>- Worse center of gravity | Maybe not |
+| Design Option                                                                | Pros                                          | Cons                                                                        | Decision  |
+| ---------------------------------------------------------------------------- | --------------------------------------------- | --------------------------------------------------------------------------- | --------- |
+| Direct drive                                                                 | - Less friction<br>- Better center of gravity | - Eats up space                                                             | Maybe     |
+| H-bridge (gears, motor from above)<br><br>![](assets/firefox_YNK5VG49tC.jpg) | - Space can be allocated to others            | - Prone to damage, especially during collision<br>- Worse center of gravity | Maybe not |
 
 ## reference
 
