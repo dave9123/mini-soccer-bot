@@ -21,7 +21,7 @@ closing eric unj 2026 - https://www.youtube.com/live/OFYB2cfvnSU?si=QakR6SRcZZy-
 
 | Design Option        | Pros                                                        | Cons                                                                                                                                               | Decision   |
 | -------------------- | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| No kicker            | - More space designated for wheel optimization              | - Can't shoot ball without moving                                                                                                                  | Preferably |
+| No kicker            | - More space designated for wheel optimization              | - Can't shoot ball without moving<br>- Cant participate in penalty kick                                                                            | Preferably |
 | Solenoid kicker      | - Able to launch ball without moving bot                    | - Uses huge space                                                                                                                                  | Maybe      |
 | Retractable flywheel | - Can shoot balls faster<br>- Easily control shooting speed | - Lowers the possibility of collision dampening (as it's in front, unlike solenoid)<br>- Needs a retractable system (might be teeny weeny complex) | Maybe not  |
 
