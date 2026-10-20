@@ -40,7 +40,7 @@ closing eric unj 2026 - https://www.youtube.com/live/OFYB2cfvnSU?si=QakR6SRcZZy-
 	<source src="assets/AQPcAXztxxP3Fwl1QkZdztBPVCHZmimtdu1Oc8Nmsn3FY94ErY93WBl2LKsOF7L-Dlvjr8-rmm2Fti0wIzDBq4l3aPunS91twu9TxME.mp4">
 </video>
 
-![[assets/Pasted image 20261018202642.png]]
+![](assets/Pasted image 20261018202642.png)
 
 https://www.instagram.com/reels/DacoHWJFLj0/
 
@@ -54,7 +54,7 @@ https://www.instagram.com/reels/DDOH0yyzbtL/
 
 ### Octopus Robot Competition 2026 - 1st Place
 
-![[assets/Pasted image 20261018201518.png]]
+![](assets/Pasted image 20261018201518.png)
 
 https://www.instagram.com/p/Dd-DpG8y725/
 
