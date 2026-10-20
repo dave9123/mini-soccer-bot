@@ -4,12 +4,12 @@ closing eric unj 2026 - https://www.youtube.com/live/OFYB2cfvnSU?si=QakR6SRcZZy-
 
 ### wheel
 
-| Design Option         | Pros                                                      | Cons                                                                                           | Decision       |
-| --------------------- | --------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | -------------- |
-| 4WD Silicone          | - Great grip traction (..until dirt)<br>                  | - Silicone sticks dirt easily, slipping afterwards<br>- Uses more power to move                | Good           |
-| 4WD Mecanum           | - Able to move more freely sideways                       | - Low traction                                                                                 | No             |
-| 2WD Silicone + Caster | - Space efficient<br>- Rotates easily during turns        | - Silicone sticks dirt easily, slipping afterwards                                             | Preferably not |
-| 6WD Silicone          | - Best traction (referenced from Malaysia's winning team) | - Needs high power to move.. or belt drive (and insanely expensive)<br>- No space for solenoid | Better         |
+| Design Option         | Pros                                                      | Cons                                                                                                             | Decision       |
+| --------------------- | --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | -------------- |
+| 4WD Silicone          | - Great grip traction (..until dirt)<br>                  | - Silicone sticks dirt easily, slipping afterwards<br>- Uses more power to move                                  | Good           |
+| 4WD Mecanum           | - Able to move more freely sideways                       | - Low traction                                                                                                   | No             |
+| 2WD Silicone + Caster | - Space efficient<br>- Rotates easily during turns        | - Silicone sticks dirt easily, slipping afterwards                                                               | Preferably not |
+| 6WD Silicone          | - Best traction (referenced from Malaysia's winning team) | - Needs high power to move.. or belt drive (and insanely expensive)<br>- No space for solenoid.. unless h-bridge | Better         |
 
 | Material Option | Pros        | Cons                                                    | Decision  |
 | --------------- | ----------- | ------------------------------------------------------- | --------- |
