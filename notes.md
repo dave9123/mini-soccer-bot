@@ -4,38 +4,23 @@ closing eric unj 2026 - https://www.youtube.com/live/OFYB2cfvnSU?si=QakR6SRcZZy-
 
 ### wheel
 
+| Design Option         | Pros                                               | Cons                                                                            | Decision |
+| --------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------- | -------- |
+| 4WD Silicone          | - Great grip traction (..until dirt)<br>           | - Silicone sticks dirt easily, slipping afterwards<br>- Uses more power to move |          |
+| 4WD Mecanum           | - Able to move more freely sideways                | - Low traction                                                                  |          |
+| 2WD Silicone + Caster | - Space efficient<br>- Rotates easily during turns | - Silicone sticks dirt easily, slipping afterwards                              |          |
+| 6WD Silicone          |                                                    |                                                                                 |          |
 
-| Design Option                     | Pros | Cons                    | Decision |
-| --------------------------------- | ---- | ----------------------- | -------- |
-| 2 Silicone Wheels + 1 Ball Caster |      |                         |          |
-| 2 Rubber Wheels + 1 Ball Caster   |      | - Requires cast molding |          |
-| 2 TPU 95A Wheels + 1 Ball Caster  |      |                         |          |
-|                                   |      |                         |          |
-| 2 Silicone Wheels<br>             |      |                         |          |
-| 2 Rubber Wheels                   |      |                         |          |
-| 2 TPU 95A Wheels                  |      |                         |          |
-|                                   |      |                         |          |
-| 4 Silicone Wheels                 |      |                         |          |
-| 4 Rubber Wheels                   |      |                         |          |
-| 4 TPU 95A Wheels                  |      |                         |          |
-|                                   |      |                         |          |
-| 6 Silicone Wheels                 |      |                         |          |
-| 6 Rubber Wheels                   |      |                         |          |
-| 6 TPU 95A Wheels                  |      |                         |          |
-|                                   |      |                         |          |
-|                                   |      |                         |          |
-|                                   |      |                         |          |
+### kicker
 
-rubber options
-- Natural rubber (latex)
-- Synthetic rubber
-- 
-
+| Design Option        | Pros | Cons | Decision |
+| -------------------- | ---- | ---- | -------- |
+| No kicker            |      |      |          |
+| Solenoid kicker      |      |      |          |
+| Retractable flywheel |      |      |          |
 
 
 ## reference
-
-
 
 ### RoboCup 2026 - 9th World
 
